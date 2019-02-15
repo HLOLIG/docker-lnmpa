@@ -22,6 +22,7 @@ services:
       - php_apache
     ports:
       - "80:80"
+      - "443:443"
     environment:
       TZ: "Asia/Shanghai"
     volumes:
