@@ -24,6 +24,8 @@ FROM php:$TAG-apache
 MAINTAINER whoru.S.Q <whorusq@gmail.com>
 
 # 修改软件更新源
+# RUN apt-get update \
+#     && apt-get install -y apt-transport-https
 # COPY ./source.list /etc/apt/sources.list
 
 # 安装、配置（拓展使用稳定版）
