@@ -1,9 +1,8 @@
-Self Used
-
-
-
-一个基于 Docker 的 LNMPA 环境
+LNMPA development with Docker and Docker Compose
 ---
+Base on https://github.com/whorusq/docker-lnmpa
+Fixed some invalid settings
+
 
 > 这是一个基于 Dokcer 的 LNMPA（Nginx + PHP + Apache + MySQL） 环境，借助 Docker compose 进行编译、管理，可用于本地开发及线上部署。
 >
