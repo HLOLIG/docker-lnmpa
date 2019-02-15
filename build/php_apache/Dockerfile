@@ -24,7 +24,7 @@ FROM php:$TAG-apache
 MAINTAINER whoru.S.Q <whorusq@gmail.com>
 
 # 修改软件更新源
-COPY ./source.list /etc/apt/sources.list
+# COPY ./source.list /etc/apt/sources.list
 
 # 安装、配置（拓展使用稳定版）
 ARG READIS
@@ -36,7 +36,7 @@ RUN apt-get update \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
-        libpng12-dev \
+        libpng-dev \
         libboost-dev libboost-all-dev gperf* libevent-dev \
     # 安装扩展：iconv、mcrypt、zip、gd、pdo_mysql、mysqli、pcntl
     && docker-php-ext-install -j$(nproc) iconv mcrypt \
